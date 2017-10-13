@@ -409,7 +409,8 @@ var Component = {
         type: type,
         state: STATE.IDLE,
         speed: speed,
-        length: duration + 2 * speed
+        length: duration + 2 * speed,
+        origin: event
       };
 
       if (duration >= 0) {

@@ -205,7 +205,8 @@ const Component = {
         type,
         state: STATE.IDLE,
         speed,
-        length: duration + 2 * speed
+        length: duration + 2 * speed,
+        origin: event
       }
 
       if (duration >= 0) {
