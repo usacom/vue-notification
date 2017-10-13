@@ -258,7 +258,7 @@ const Component = {
     destroy (item) {
       clearTimeout(item.timer)
       item.state = STATE.DESTROYED
-
+      this.$emit('destroy', item)
       if (!this.isVA) {
         this.clean()
       }
